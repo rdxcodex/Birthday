@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Happy Birthday Khushu Didi 🎂</title>
+  <meta
+    name="description"
+    content="A cute, magical and emotional birthday website for Khushu Didi, celebrating 26 wonderful years."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="twinkles" aria-hidden="true"></div>
+    <div class="hearts-layer" id="hearts-layer" aria-hidden="true"></div>
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+    <header class="hero">
+      <nav class="topbar">
+        <div class="badge">For Khushboo, our Khushu Didi</div>
+        <button class="music-toggle" id="music-toggle" type="button" aria-pressed="true">
+          <span class="music-icon"></span>
+          <span id="music-label">Music On</span>
+        </button>
+      </nav>
+
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">A magical little birthday world</p>
+          <h1>Happy Birthday Khushu Didi 🎉</h1>
+          <p class="subtitle">Celebrating 26 wonderful years</p>
+          <p class="hero-note">
+            For the sweetest sister, with pastel sparkles, floating hearts, happy memories,
+            and all the love wrapped into one tiny celebration.
+          </p>
+          <div class="hero-pills" aria-hidden="true">
+            <span>Pastel dreams</span>
+            <span>Lovely memories</span>
+            <span>Birthday magic</span>
+          </div>
+        </div>
+
+        <div class="cake-stage" aria-label="Animated birthday cake illustration">
+          <div class="cake-glow"></div>
+          <div class="balloon balloon-left">
+            <span></span>
+          </div>
+          <div class="balloon balloon-right">
+            <span></span>
+          </div>
+          <div class="spark spark-a"></div>
+          <div class="spark spark-b"></div>
+          <div class="spark spark-c"></div>
+          <div class="cake-plate"></div>
+          <div class="cake">
+            <div class="cake-shadow"></div>
+            <div class="cake-base cake-top"></div>
+            <div class="cake-drip"></div>
+            <div class="cake-base cake-bottom"></div>
+            <div class="candles">
+              <div class="candle"><span class="flame"></span></div>
+              <div class="candle"><span class="flame"></span></div>
+              <div class="candle"><span class="flame"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="panel intro-panel reveal">
+        <div class="panel-inner">
+          <div>
+            <p class="section-kicker">Birthday note</p>
+            <h2>Sweet, soft, and full of smiles</h2>
+            <p>
+              This little page is designed like a dreamy memory box for Khushu Didi,
+              filled with cute animations, gentle colors, and all the moments that make her special.
+            </p>
+          </div>
+          <div class="mini-stats">
+            <article>
+              <strong>26</strong>
+              <span>Beautiful years</span>
+            </article>
+            <article>
+              <strong>∞</strong>
+              <span>Love and blessings</span>
+            </article>
+            <article>
+              <strong>1</strong>
+              <span>Most precious Didi</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Photo slideshow</p>
+          <h2>Favorite moments in motion</h2>
+          <p>
+            Add all photos to the <code>/images</code> folder, refresh the manifest, and they will appear here automatically.
+          </p>
+        </div>
+
+        <div class="slideshow-shell">
+          <div class="slideshow-frame">
+            <div class="slideshow-track" id="slideshow-track">
+              <article class="slide placeholder-slide is-active">
+                <div class="slide-image placeholder-art">
+                  <span>Place birthday photos inside <code>/images</code></span>
+                </div>
+                <div class="slide-caption">
+                  <strong>Waiting for memories</strong>
+                  <span>Run the manifest updater after adding photos.</span>
+                </div>
+              </article>
+            </div>
+            <div class="sparkle-burst" id="sparkle-burst" aria-hidden="true"></div>
+          </div>
+          <div class="slideshow-controls">
+            <button type="button" class="soft-button" id="prev-slide">Previous</button>
+            <div class="slide-dots" id="slide-dots" aria-label="Slideshow navigation"></div>
+            <button type="button" class="soft-button" id="next-slide">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Memory gallery</p>
+          <h2>Scattered like treasured polaroids</h2>
+          <p>
+            A playful collage of memories with stickers, ribbons, and soft little surprises.
+          </p>
+        </div>
+
+        <div class="memory-board" id="memory-board">
+          <article class="memory-card placeholder-card">
+            <div class="memory-photo placeholder-art">
+              <span>Your photos will appear here</span>
+            </div>
+            <div class="memory-note">
+              <strong>Memory board</strong>
+              <p>Add images into the folder and open the page again.</p>
+            </div>
+            <span class="sticker sticker-star"></span>
+            <span class="sticker sticker-heart"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel instructions-panel reveal">
+        <div class="section-heading">
+          <p class="section-kicker">How to add photos</p>
+          <h2>Simple setup</h2>
+        </div>
+        <ol class="instructions-list">
+          <li>Place all birthday photos inside <code>/images</code>.</li>
+          <li>Place your background song at <code>/music/birthday-song.mp3</code>.</li>
+          <li>Run <code>powershell -ExecutionPolicy Bypass -File .\scripts\update-image-manifest.ps1</code>.</li>
+          <li>Reload the page. The slideshow and gallery will use every image found in the folder.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Made with love ❤️</p>
+    </footer>
+  </div>
+
+  <audio id="birthday-music" loop autoplay preload="auto">
+    <source src="music/birthday-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close photo view">×</button>
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" src="" alt="Memory photo">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
